@@ -57,7 +57,7 @@ console.log(board);
 
 // p2 summons black belt ninja and upr
 bbn.summon(board[1]);
-upr.play(board[0][0]);
+upr.play(board[1][0]);
 console.log(board);
 
 //
