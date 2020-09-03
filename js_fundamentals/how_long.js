@@ -112,4 +112,13 @@ function reverseString(str){
     return splitStr.join("");
 }
 
+function reverseStrng(str) {
+    let splitStr = str.split("")
+
+    for(let i=0; i < splitStr.length/2; i++) {
+        let temp = splitStr[i];
+        splitStr[i]
+    }
+}
+
 console.log(reverseString(story));

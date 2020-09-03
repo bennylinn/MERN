@@ -101,6 +101,5 @@ function mergeSort(nums) {
   //               9                      
   return merge(mergeSort(leftSide), mergeSort(rightSide));
 }
-// Crashing my browser :(
 
-console.log(mergeSort(numsReversed));
+
