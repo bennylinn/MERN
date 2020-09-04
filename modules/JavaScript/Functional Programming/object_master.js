@@ -49,3 +49,6 @@ console.log(flying)
 
 const normalCount = pokémon.filter( p => p.types.includes('normal') ).length
 console.log(normalCount)
+
+const poison = pokémon.filter( p => p.types.includes("poison") && p.types.length===1 ).map( p => p.name )
+console.log(poison)

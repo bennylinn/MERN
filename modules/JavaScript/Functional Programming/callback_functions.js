@@ -86,6 +86,14 @@ console.log(strings)
 const reduceTest = strings.reduce( (accumulator, item) => accumulator+item )
 console.log(reduceTest)
 
+// Currying: run part of fn
+function ninjaBelt(ninja){
+    return function belt(beltColor){ //note the closure here!
+      console.log("Ninja "+ ninja + " has earned a " + beltColor +" belt.");
+    }
+}
+ninjaBelt('Eileen'); 
+
 
 
 
