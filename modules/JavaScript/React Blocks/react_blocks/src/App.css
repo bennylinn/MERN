@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  border: 3px solid grey;
+  padding: 10px;
+  min-height: 95vh;
+  width: 92%;
+}
+
+.header {
+  background-color: green;
+  min-height: 20vh;
+}
+
+.navigation {
+  display: inline-block;
+  width: 20%;
+  min-height: 55vh;
+  background-color: #6fa8dc;
+  margin-top: 10px;
+  vertical-align: top;
+}
+
+.main {
+  display: inline-block;
+  width: 77%;
+  min-height: 75vh;
+  background-color: #e06666;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.subcontents {
+  display: inline-block;
+  width: 30%;
+  background-color: #ffd966;
+  min-height: 50vh;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.advertisement {
+  margin-top: 10px;
+  display: inline-block;
+  width: 97%;
+  min-height: 20vh;
+  background-color: #b4a7d6;
+}
