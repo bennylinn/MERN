@@ -3,6 +3,7 @@ import React, { useState } from  'react';
     
 const UserForm = (props) => {
     const { inputs, setInputs } = props; // assigning props to variables
+    const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
     
     const onChange = e => {
         setInputs({
@@ -11,9 +12,17 @@ const UserForm = (props) => {
         })
         // console.log(inputs)
     }
+
+    const createUser = e => {
+        e.preventDefault();
+        const { userName, email, password } = inputs;
+        const newUser = { userName, email, password};
+        console.log("Welcome", newUser.userName);
+        setHasBeenSubmitted( true );
+    }
     
     return(
-        <form>
+        <form onSubmit={ createUser }>
             <div>
                 <label>Username: </label> 
                 <input onChange={onChange} type="text" name="userName"/>
@@ -30,6 +39,7 @@ const UserForm = (props) => {
                 <label>Confirm Password: </label>
                 <input onChange={onChange} type="password" name="confirmPassword" />
             </div>
+            <input type="submit" value="Create User"></input>
         </form>
     );
 };
